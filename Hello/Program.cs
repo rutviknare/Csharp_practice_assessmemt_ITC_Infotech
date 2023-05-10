@@ -387,8 +387,9 @@ namespace Hello
 
         }
     }*/
-    class Program
-    {
+    //class Program
+    //{
+    /*
         static void printnumber(int num)
         {
             if (num > 18)
@@ -407,6 +408,35 @@ namespace Hello
             printnumber(num);
             Console.ReadLine();
         }
+    }
+    */
+    class A
+    {
+        public void samemethodname(string name,string surname)
+
+        {
+            Console.WriteLine("1st Method of Class A");
+            Console.WriteLine("Name: " + name);
+            Console.WriteLine("Surname: " + surname);
+        }
+        public void samemethodname(string name, int age, string surname)
+        {
+            Console.WriteLine("2nd Method of Class A");
+            Console.WriteLine("Name: "+name);
+            Console.WriteLine("Surname: " + surname);
+            Console.WriteLine("Age: " + age);
+        }
+    }
+    class Program {
+    
+            public static void Main(string[] args) { 
+        
+            A a = new A();
+            a.samemethodname("Rutvik", "Nare");
+            a.samemethodname("Rutvik", 23, "Nare");
+            Console.ReadLine();
+        }
+    
     }
 
 }
